@@ -1,0 +1,5 @@
+{{extend 'layout.html'}}
+
+<h1>TThis is the sum of two number page</h1>
+
+<h2> so the sum of two number is   {{=total}} </h2>
