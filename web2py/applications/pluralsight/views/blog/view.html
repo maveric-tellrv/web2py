@@ -2,11 +2,12 @@
 <h1>Rohit logs views</h1>
 {{ for x in rows: }}
 <div class='row'>
-    <img class='col col-lg-4 col-md-4 col-sm-4' src='{{=x.blog_image}}' alt='blog image' />
+    <img class='col col-lg-2 col-md-2 col-sm-2' src='{{=x.blog_image}}' alt='blog image' />
     <div class='col col-lg-8'>
         <p><b> Title {{=x.blog_title}} </b></p>
         <p> Category: {{=x.blog_category}}</p>
         <p> {{=x.blog_details}} </p>
+        <p> Date posted {{=x.blog_date_posted}} </p>
     </div>
 </div>
 

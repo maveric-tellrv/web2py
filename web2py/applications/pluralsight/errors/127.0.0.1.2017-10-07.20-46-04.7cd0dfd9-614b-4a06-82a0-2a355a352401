@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.KeyError'> "
+p3
+sS'layer'
+p4
+S'/home/rovyas/Documents/web2py/web2py/applications/pluralsight/controllers/polarion.py'
+p5
+sS'code'
+p6
+S'<code object <module> at 0x7fd79cf07db0, file "/home/rovyas/Documents/web2py/web2py/applications/pluralsight/controllers/polarion.py", line 6>'
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "/home/rovyas/Documents/web2py/web2py/gluon/restricted.py", line 219, in restricted\n    exec(ccode, environment)\n  File "/home/rovyas/Documents/web2py/web2py/applications/pluralsight/controllers/polarion.py", line 26, in <module>\n  File "/home/rovyas/Documents/web2py/web2py/gluon/globals.py", line 414, in <lambda>\n    self._caller = lambda f: f()\n  File "/home/rovyas/Documents/web2py/web2py/applications/pluralsight/controllers/polarion.py", line 21, in polarion_view\n    print rows[0][2]\n  File "/home/rovyas/Documents/web2py/web2py/gluon/packages/dal/pydal/objects.py", line 84, in __getitem__\n    raise KeyError\nKeyError\n'
+p11
+s.

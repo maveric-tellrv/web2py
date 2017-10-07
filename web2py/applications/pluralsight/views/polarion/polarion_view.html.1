@@ -1,0 +1,15 @@
+{{extend 'layout.html'}}
+<h1>Polarion Test Cases List</h1>
+
+
+{{ for x in rows: }}
+
+<div class='col col-lg-8'>
+    <table>
+        <tr>
+            <th>{{=x.TC_ID}}</th>
+            <th>{{=x.Title}}</th>
+            <th>{{=x.Description}}</th>
+        </tr>
+   </table>
+</div>

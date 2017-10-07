@@ -134,7 +134,16 @@ auth.settings.reset_password_requires_verification = True
 db.define_table('blog',
                Field('blog_title',requires=IS_NOT_EMPTY()),
                Field('blog_details',type='text'),
-               Field('blog_image',require=IS_URL()),
+               Field('blog_image',requires=IS_URL()),
                Field('blog_category',requires=IS_IN_SET(['News','Events'])),
                Field('blog_date_posted',type='date',requires=IS_DATE())
+               )
+
+db.define_table('polarion',
+               Field('TC_ID'),
+               Field('Title',type='text'),
+               Field('Severity'),
+               Field('Description',type='text'),
+               Field('Project'),
+               Field('TC')
                )

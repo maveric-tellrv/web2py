@@ -138,3 +138,12 @@ db.define_table('blog',
                Field('blog_category',requires=IS_IN_SET(['News','Events'])),
                Field('blog_date_posted',type='date',requires=IS_DATE())
                )
+
+db.define_table('polarion',
+               Field('TC_ID'),
+               Field('Title',type='text'),
+               Field('Severity',requires=IS_IN_SET(['Severity','Medium','Low'])),
+               Field('Description',type='text'),
+               Field('Project'),
+               Field('TC')
+               )
