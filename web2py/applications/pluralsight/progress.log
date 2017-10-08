@@ -322,3 +322,7 @@
 [2017-10-08 11:14:00] EDIT pluralsight/views/priority/test.html: 0
 [2017-10-08 11:14:46] EDIT pluralsight/views/priority/test.html: 0
 [2017-10-08 11:17:28] EDIT pluralsight/views/priority/test.html: 0
+[2017-10-08 11:24:24] EDIT pluralsight/controllers/priority.py: 2
+[2017-10-08 11:26:14] EDIT pluralsight/controllers/priority.py: -87
+[2017-10-08 11:27:09] EDIT pluralsight/controllers/priority.py: 2
+[2017-10-08 11:27:58] EDIT pluralsight/controllers/priority.py: 1
