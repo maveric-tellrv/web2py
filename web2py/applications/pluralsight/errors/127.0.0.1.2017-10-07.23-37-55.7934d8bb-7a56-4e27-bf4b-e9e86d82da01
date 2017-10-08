@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.LookupError'> \n**********************************************************************\n  Resource u'tokenizers/punkt/english.pickle' not found.  Please\n  use the NLTK Downloader to obtain the resource:  >>>\n  nltk.download()\n  Searched in:\n    - '/home/rovyas/nltk_data'\n    - '/usr/share/nltk_data'\n    - '/usr/local/share/nltk_data'\n    - '/usr/lib/nltk_data'\n    - '/usr/local/lib/nltk_data'\n    - u''\n**********************************************************************"
+p3
+sS'layer'
+p4
+S'/home/rovyas/Documents/web2py/web2py/applications/pluralsight/controllers/priority.py'
+p5
+sS'code'
+p6
+S'<code object <module> at 0x7fd79da22a30, file "/home/rovyas/Documents/web2py/web2py/applications/pluralsight/controllers/priority.py", line 4>'
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "/home/rovyas/Documents/web2py/web2py/gluon/restricted.py", line 219, in restricted\n    exec(ccode, environment)\n  File "/home/rovyas/Documents/web2py/web2py/applications/pluralsight/controllers/priority.py", line 229, in <module>\n  File "/home/rovyas/Documents/web2py/web2py/gluon/globals.py", line 414, in <lambda>\n    self._caller = lambda f: f()\n  File "/home/rovyas/Documents/web2py/web2py/applications/pluralsight/controllers/priority.py", line 55, in test\n    word_sent= word_tokenize(sentence.lower())\n  File "/usr/lib/python2.7/site-packages/nltk/tokenize/__init__.py", line 130, in word_tokenize\n    sentences = [text] if preserve_line else sent_tokenize(text, language)\n  File "/usr/lib/python2.7/site-packages/nltk/tokenize/__init__.py", line 96, in sent_tokenize\n    tokenizer = load(\'tokenizers/punkt/{0}.pickle\'.format(language))\n  File "/usr/lib/python2.7/site-packages/nltk/data.py", line 814, in load\n    opened_resource = _open(resource_url)\n  File "/usr/lib/python2.7/site-packages/nltk/data.py", line 932, in _open\n    return find(path_, path + [\'\']).open()\n  File "/usr/lib/python2.7/site-packages/nltk/data.py", line 653, in find\n    raise LookupError(resource_not_found)\nLookupError: \n**********************************************************************\n  Resource u\'tokenizers/punkt/english.pickle\' not found.  Please\n  use the NLTK Downloader to obtain the resource:  >>>\n  nltk.download()\n  Searched in:\n    - \'/home/rovyas/nltk_data\'\n    - \'/usr/share/nltk_data\'\n    - \'/usr/local/share/nltk_data\'\n    - \'/usr/lib/nltk_data\'\n    - \'/usr/local/lib/nltk_data\'\n    - u\'\'\n**********************************************************************\n'
+p11
+s.

@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.AttributeError'> 'DAL' object has no attribute 'TC_ID'"
+p3
+sS'layer'
+p4
+S'/home/rovyas/Documents/web2py/web2py/applications/pluralsight/controllers/priority.py'
+p5
+sS'code'
+p6
+S'<code object <module> at 0x7f89583fed30, file "/home/rovyas/Documents/web2py/web2py/applications/pluralsight/controllers/priority.py", line 4>'
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "/home/rovyas/Documents/web2py/web2py/gluon/restricted.py", line 219, in restricted\n    exec(ccode, environment)\n  File "/home/rovyas/Documents/web2py/web2py/applications/pluralsight/controllers/priority.py", line 232, in <module>\n  File "/home/rovyas/Documents/web2py/web2py/gluon/globals.py", line 414, in <lambda>\n    self._caller = lambda f: f()\n  File "/home/rovyas/Documents/web2py/web2py/applications/pluralsight/controllers/priority.py", line 33, in test\n    read_db_data = db(db.polarion).select(orderby=db.TC_ID)\n  File "/home/rovyas/Documents/web2py/web2py/gluon/packages/dal/pydal/base.py", line 670, in __getattr__\n    return BasicStorage.__getattribute__(self, key)\nAttributeError: \'DAL\' object has no attribute \'TC_ID\'\n'
+p11
+s.

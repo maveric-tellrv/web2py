@@ -1,8 +1,8 @@
 {{extend 'layout.html'}}
 <h1>Polarion Test Cases List</h1>
 
-{{ for x in rows.sort(): }}
-<li type="square"><p> {{=x.TC_ID}}: Title: {{=x.Title}} </p></li>
+{{ for x in rows: }}
+<li type="square"><p> {{=x.TC_ID.}}: Title: {{=x.Title}} </p></li>
 <p> Description: {{=x.Description}} </p>
 
 {{ pass }}

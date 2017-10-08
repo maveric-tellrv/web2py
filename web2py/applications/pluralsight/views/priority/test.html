@@ -1,0 +1,7 @@
+{{extend 'layout.html'}}
+<h1>Priority Test listing</h1>
+{{ from itertools import izip
+    for x,y in izip(priority_test,test_list): }}
+<li><p> {{=x}}</p> <p><b>Ranking Score: {{=ranking[y]}}</b></p></li>
+
+{{ pass }}
