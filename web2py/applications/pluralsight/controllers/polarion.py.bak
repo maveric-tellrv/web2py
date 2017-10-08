@@ -17,9 +17,9 @@ def polarion_display_form():
 
 def polarion_view():
     rows = db(db.polarion).select()
-    print rows[0].TC_ID
-#     rows.sort(key=operator.itemgetter('TC_ID'))
-    rows = sorted(rows, key=lambda k: k['TC_ID'])
+#     print rows[0].TC_ID
+    print rows
+#     rows = sorted(rows, key=lambda k: k['TC_ID'])
     return locals()
 
 def index(): return dict(message="hello from polarion.py")

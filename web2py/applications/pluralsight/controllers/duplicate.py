@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 # try something like
 
+# -*- coding: utf-8 -*-
+# try something like
+
 from nltk.tokenize import word_tokenize,sent_tokenize
 from nltk.corpus import stopwords
 from string import punctuation
@@ -65,7 +68,10 @@ def test():
         print priority_test
         
         value_occurance,filtered_dict = dup_val(ranking)
-      
+        for i ,j in value_occurance.iteritems():
+            for tc_num,tc_rank in filtered_dict.iteritems():
+                if tc_rank == i:
+                    print tc_num,i,j
 
         return locals()
 
@@ -90,4 +96,5 @@ def priotity_result():
     result = summarize(module.tc,int(n1))
     return locals()
 
-def index(): return dict(message="hello from priority.py")
+
+def index(): return dict(message="hello from duplicate.py")

@@ -56,17 +56,34 @@ def test():
         #test_list is the list of ranking from largest to smallest
         test_list = nlargest(n,ranking,key=ranking.get)
         print test_list
+        
         priority_test = []
         
+        #Creating the list of priority test cases to iterate in views 
         for j in test_list:
             priority_test = priority_test + [sentence1[j]]
         print priority_test
         
-        
+        value_occurance,filtered_dict = dup_val(ranking)
+      
+
         return locals()
 
 
 ##################################################################################################
+
+
+def dup_val(dict_val):
+    import collections
+    value_occurrences = {}
+    filtered_dict = {}
+    value_occurrences = collections.Counter(dict_val.values())
+    filtered_dict = {key: value for key, value in dict_val.items() if value_occurrences[value] > 1}
+    for i , j in value_occurrences.iteritems():
+        if j >= 2:
+            print i,":",j
+
+    return (value_occurrences,filtered_dict)
 
 
 def priotity_result():
