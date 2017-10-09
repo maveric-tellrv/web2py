@@ -13,7 +13,7 @@
 <p> Rank-score: {{=i}} Occurance {{=j}} </p>
 {{ pass }} -->
 
-<div>
+<!-- <div>
     {{for tc_num,tc_rank in filtered_dict.iteritems():}}
     <p>
 
@@ -22,11 +22,19 @@
         Title: {{=sentence1[tc_num]}}]
         </p>
     {{pass}}
-</div>
-<div>
+</div> -->
+<!-- <div>
     <p> {{=tc_rank_list}} </p>
     <p> ################## </p>
     <p>
          {{=tc_rank_list_remove_single_val}}
     </p>
-</div>
+</div> -->
+
+
+    {{for key, values in tc_rank_list_remove_single_val.items():}}
+    <p><b>Ranking Score: {{=key}}</b></p>
+        {{ for v in values: }}
+    <p>{{=sentence1[v]}}</p>>
+        {{pass}}
+    {{pass}}
