@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.TypeError'> unhashable type: 'dict'"
+p3
+sS'layer'
+p4
+S'/home/rovyas/Documents/web2py/web2py/applications/pluralsight/controllers/duplicate.py'
+p5
+sS'code'
+p6
+S'<code object <module> at 0x7fd452364830, file "/home/rovyas/Documents/web2py/web2py/applications/pluralsight/controllers/duplicate.py", line 7>'
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "/home/rovyas/Documents/web2py/web2py/gluon/restricted.py", line 219, in restricted\n    exec(ccode, environment)\n  File "/home/rovyas/Documents/web2py/web2py/applications/pluralsight/controllers/duplicate.py", line 116, in <module>\n  File "/home/rovyas/Documents/web2py/web2py/gluon/globals.py", line 414, in <lambda>\n    self._caller = lambda f: f()\n  File "/home/rovyas/Documents/web2py/web2py/applications/pluralsight/controllers/duplicate.py", line 80, in test\n    tc_rank_list_remove_single_val[tc_rank_list].append(tc_rank_list[i])\nTypeError: unhashable type: \'dict\'\n'
+p11
+s.

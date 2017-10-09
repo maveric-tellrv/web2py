@@ -67,6 +67,20 @@ def test():
             priority_test = priority_test + [sentence1[j]]
         print priority_test
         
+        tc_rank_list = {}
+        for values in ranking:
+            if ranking[values] in tc_rank_list:
+                tc_rank_list[ranking[values]].append(values)
+            else:
+                tc_rank_list[ranking[values]] = [values]
+                
+        tc_rank_list_remove_single_val = {}
+        for i in tc_rank_list:
+            if len(tc_rank_list[i]) > 1:
+                tc_rank_list_remove_single_val[i]=tc_rank_list[i]
+
+
+        
         value_occurance,filtered_dict = dup_val(ranking)
         for i ,j in value_occurance.iteritems():
             for tc_num,tc_rank in filtered_dict.iteritems():
